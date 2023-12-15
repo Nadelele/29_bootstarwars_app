@@ -1,38 +1,100 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poller One', cursive;
+    background-image: url('./Images/sky.jpg');
+    background-attachment: fixed;
+    color: goldenrod;
+}
+
+header {
+    background-color: rgba(60, 69, 67, .6);
+    border-radius: 15px 15px 0 0;
+}
+
+nav > ul {
+    list-style: none;
+    position: fixed;
+    padding: 0;
+    top: 5px;
+    left: 40px;
+}
+
+nav li {
+    display: inline;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(204, 3, 35, .5);
+    cursor: pointer;
+}
+
+header>h1 {
+    text-align: center;
+    /* 
+        em - совпадает со значением font-size элемента
+        rem - дефолтный размер шрифта (16px)
+    */
+    padding: 1em 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    border: 1px solid goldenrod;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 0 10px 0 10px;
+    margin: 0 5px;
+}
+
+.right img {
+    width: 160px;
+    height: 120px;
+}
+
+.right h2 {
   text-align: center;
+  font-size: 16px;
+  letter-spacing: .2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.farGalaxy {
+    /* font-size: 2em; */
+    letter-spacing: .2em;
+    line-height: 1.5;
+    text-align: justify;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+    background-color: rgba(60, 69, 67, .6);
+    border-radius: 0 0 15px 15px;
+    height: 6em;
+    clear: both;
+    /*
+        Приклеит элемент к низу страницы
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer a{
+  text-decoration: none;
+  color:goldenrod;
+
 }
 
-.App-link {
-  color: #61dafb;
+#FriendsGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
