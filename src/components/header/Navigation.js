@@ -5,8 +5,8 @@ function Navigation() {
     const NavItemList = ['Home', 'About us', 'Star Wars', 'Contact'];
 
     return (
-        <nav>
-            <ul>
+        <nav className="fixed-top mt-2 ms-4">
+            <ul className="nav">
                 {
                     NavItemList.map((n) => <NavItem element={n} />)
                 }

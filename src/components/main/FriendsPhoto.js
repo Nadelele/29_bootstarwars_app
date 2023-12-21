@@ -4,7 +4,7 @@ function FriendsPhoto(props) {
 
     return (
         <>
-            <img className="grid-item" src={props.src} alt="The friend" />
+        <img src={props.src} alt="The friend" />
         </>
 
 

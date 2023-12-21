@@ -5,7 +5,7 @@ function Title(props){
     
     
     return(
-    <h1>{props.title}</h1>
+    <h1 className="text-center py-4">{props.title}</h1>
      )
 }
 

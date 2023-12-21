@@ -6,7 +6,7 @@ function Header(){
     return(
         <header>
         <Navigation />
-        <Title title = 'Luke Skywalker' />
+        <Title  title = 'Luke Skywalker' />
         </header>
     )
 }
