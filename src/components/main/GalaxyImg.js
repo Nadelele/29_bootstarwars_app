@@ -2,7 +2,7 @@ import React from "react";
 
 function GalaxyImg(props){
     return(
-        <section className="left">
+        <section className="float-start">
         <img src = {props.src} alt={props.alt} />
         </section>
     )

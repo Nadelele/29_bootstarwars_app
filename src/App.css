@@ -1,84 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Poller One', cursive;
-    background-image: url('./Images/sky.jpg');
-    background-attachment: fixed;
-    color: goldenrod;
+  font-family: "Poller One", cursive;
+  background-image: url("./Images/sky.jpg");
+  background-attachment: fixed;
+  color: goldenrod;
 }
 
 header {
-    background-color: rgba(60, 69, 67, .6);
-    border-radius: 15px 15px 0 0;
+  background-color: rgba(60, 69, 67, 0.6);
+  border-radius: 15px 15px 0 0;
 }
 
 nav > ul {
-    list-style: none;
-    position: fixed;
-    padding: 0;
-    top: 5px;
-    left: 40px;
+  list-style: none;
+  position: fixed;
+  padding: 0;
+  top: 5px;
+  left: 40px;
 }
 
 nav li {
-    display: inline;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: rgba(204, 3, 35, .5);
-    cursor: pointer;
+  display: inline;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(204, 3, 35, 0.5);
+  cursor: pointer;
 }
 
-header>h1 {
-    text-align: center;
-    /* 
+header > h1 {
+  text-align: center;
+  /* 
         em - совпадает со значением font-size элемента
         rem - дефолтный размер шрифта (16px)
     */
-    padding: 1em 0;
+  padding: 1em 0;
 }
 
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-    border: 1px solid goldenrod;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 0 10px 0 10px;
-    margin: 0 5px;
-}
-
-.right img {
-    width: 160px;
-    height: 120px;
+.float-end img {
+  width: 160px;
+  height: 120px;
 }
 
 .right h2 {
   text-align: center;
   font-size: 16px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 
 .farGalaxy {
-    /* font-size: 2em; */
-    letter-spacing: .2em;
-    line-height: 1.5;
-    text-align: justify;
-    
+  /* font-size: 2em; */
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 footer {
-    background-color: rgba(60, 69, 67, .6);
-    border-radius: 0 0 15px 15px;
-    height: 6em;
-    clear: both;
-    /*
+  background-color: rgba(60, 69, 67, 0.6);
+  border-radius: 0 0 15px 15px;
+  height: 6em;
+  clear: both;
+  /*
         Приклеит элемент к низу страницы
         position: fixed;
         bottom: 0;
@@ -86,15 +72,23 @@ footer {
     */
 }
 
-footer a{
+footer a {
   text-decoration: none;
-  color:goldenrod;
-
+  color: goldenrod;
 }
 
-#FriendsGrid{
+#FriendsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
 }
 
+.another_message {
+  height: 200px;
+  margin: 20px;
+}
+
+textarea {
+  height: 150px;
+  width: 500px;
+}

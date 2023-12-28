@@ -1,21 +1,26 @@
 import React from 'react';
-import Friends from './DreamTeam';
-import GalaxyImg from './GalaxyImg';
-import GalaxyText from './GalaxyText';
-import MainImg from '../../Images/main.jpg'
+import { NavItemList } from '../../utils';
+import AboutUs from '../../pages/AboutUs';
+import Contacts from '../../pages/Contacts';
+import StarWars from '../../pages/StarWars';
+import Home from '../../pages/Home';
+
+const Main = ({ currentPage }) => {
+    switch (currentPage) {
+        case NavItemList[1]:
+            return <AboutUs />;
+
+        case NavItemList[2]:
+            return <StarWars />;
+
+        case NavItemList[3]:
+            return <Contacts />;
 
 
-function Header(){
-    return(
-        <main>
-           
-                <GalaxyImg src = {MainImg} alt = "Luke Skywalker" />
-                <Friends />
-                <GalaxyText />
-            
-        </main>
+        default:
+            return <Home />;
+    }
 
-    )
 }
 
-export default Header;
+export default Main;

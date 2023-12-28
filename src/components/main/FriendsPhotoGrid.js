@@ -13,7 +13,7 @@ class FriendsPhotoGrid extends React.Component {
     }
     render(){
         return (
-            <div className="d-flex flex-wrap">
+            <div className="d-flex flex-wrap px-2">
                 {
                     listOfImages.map(
                         (image, index) => <FriendsPhoto key = {index} src={image}  />

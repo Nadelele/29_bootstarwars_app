@@ -2,13 +2,14 @@ import React from 'react';
 import Navigation from './Navigation';
 import Title from './Title';
 
-function Header(){
+const Header = ({ changePage }) => {
+    
     return(
         <header>
-        <Navigation />
-        <Title  title = 'Luke Skywalker' />
+        <Navigation changePage = {changePage} />
+        <Title  title = {changePage} />
         </header>
     )
-}
+    }
 
-export default Header;
+    export default Header;
